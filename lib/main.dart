@@ -82,10 +82,12 @@ class _MyHomePageState extends State<MyHomePage> {
     showModalBottomSheet(
       context: context,
       builder: (_) {
-        return GestureDetector(
-          child: NewTransaction(_addNewTransaction),
-          onTap: () {},
-          behavior: HitTestBehavior.opaque,
+        return SingleChildScrollView(
+          child: GestureDetector(
+            child: NewTransaction(_addNewTransaction),
+            onTap: () {},
+            behavior: HitTestBehavior.opaque,
+          ),
         );
       },
     );

@@ -95,7 +95,7 @@ class _NewTransactionState extends State<NewTransaction> {
                           color: Colors.black, fontWeight: FontWeight.w600),
                     ),
                   ),
-                  FlatButton(
+                  TextButton(
                     child: Text(
                       'Choose Date',
                       style: TextStyle(
@@ -108,7 +108,7 @@ class _NewTransactionState extends State<NewTransaction> {
                 ],
               ),
             ),
-            RaisedButton(
+            MaterialButton(
               color: Colors.purple,
               onPressed: submitData,
               child: Text(
