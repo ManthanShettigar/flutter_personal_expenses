@@ -82,11 +82,15 @@ class _MyHomePageState extends State<MyHomePage> {
     showModalBottomSheet(
       context: context,
       builder: (_) {
-        return SingleChildScrollView(
-          child: GestureDetector(
-            child: NewTransaction(_addNewTransaction),
-            onTap: () {},
-            behavior: HitTestBehavior.opaque,
+        return Container(
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(30))),
+          child: SingleChildScrollView(
+            child: GestureDetector(
+              child: NewTransaction(_addNewTransaction),
+              onTap: () {},
+              behavior: HitTestBehavior.opaque,
+            ),
           ),
         );
       },
@@ -131,7 +135,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Card(
                   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 1),
                   elevation: 7,
-                  // child: BarChartSample3(),
                   child: Chart(_recentTransactions),
                   shadowColor: Colors.grey,
                 ),
