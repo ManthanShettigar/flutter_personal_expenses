@@ -1,6 +1,6 @@
 # personal_expenses
 
-A Simple Personal Expense Manager Flutter App which allows you to Manage your daily Expenses With few Features Such as Adding & Deleting Transaction , View Percentage Bar Chart Of Your Weekly Expenses and much more.
+A Simple Personal Expense Manager Flutter App which allows you to Manage your daily Expenses With Features Such as Adding & Deleting Transaction , View Percentage Bar Chart Of Your Daily Expenses throughout the week and much more.
 
 ## Getting Started
 
